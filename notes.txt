@@ -1,0 +1,101 @@
+Static method → can directly call only static members.
+Non-static method → needs an object.
+
+super → use parent's constructor/method/variable
+
+Overloading → same method name, different parameters
+
+Overriding → inheritance + same method name + same parameters
+
+//Abstraction
+Abstraction = Hiding implementation and showing essential details.
+
+Abstract Class = Incomplete class declared using abstract keyword.
+
+Abstract Method = Method without body.
+
+Cannot create object of abstract class.
+
+Child must implement abstract methods or become abstract.
+
+Abstract class can contain both abstract and normal methods.
+
+Abstract classes support runtime polymorphism.
+
+Runtime Polymorphism with Abstraction
+Animal a = new Dog();
+
+a.sound();
+
+Output:
+
+Bark
+
+Rule:
+
+Reference type decides accessible methods.
+Object type decides which overridden method runs.
+
+@Override
+
+✅ Optional
+
+✅ Compiler checks correct overriding
+
+✅ Helps catch spelling mistakes
+
+❌ Does not change output
+
+//interface
+
+Interface defines a contract (set of rules) that implementing classes must follow.
+
+If a class implements an interface, it must implement all interface methods.
+
+Interfaces are used when we want multiple classes to provide their own implementation of the same methods.
+
+When implementing interface methods:
+
+public void methodName()
+
+is usually required.
+
+| Abstract Class              | Interface                                 |
+| --------------------------- | ----------------------------------------- |
+| `abstract class Animal`     | `interface Animal`                        |
+| Use `extends`               | Use `implements`                          |
+| Can have abstract methods   | Can have method declarations              |
+| Can have normal methods     | Traditionally only declarations           |
+| Can have constructors       | No constructors                           |
+| Can have instance variables | Usually constants (`public static final`) |
+| Single inheritance          | Multiple inheritance supported            |
+| Cannot create object        | Cannot create object                      |
+
+
+//final keyword
+Final Variable = Value cannot be changed.
+Final Method = Cannot be overridden.
+Final Class = Cannot be inherited.
+
+//Object class
+
+Object Class
+Object class is the parent of all Java classes.
+
+Important Methods
+getClass()
+obj.getClass();
+Returns object's class.
+
+toString()
+obj.toString();
+Returns string representation of object.
+
+equals()
+obj.equals(otherObj);
+Checks whether two objects are equal.
+
+Returns:
+
+true
+false
